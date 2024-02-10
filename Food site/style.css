@@ -1,0 +1,57 @@
+
+/* Change the background color to purple-blue */
+.navbar {
+    background-color: #220141; /* Purple-Blue color code */
+}
+
+/* Change the text color to white */
+.navbar a {
+    color: #ffffff; /* White color code */
+}
+
+/* Change the text color of the brand to white */
+.navbar-brand {
+    color: #ffffff; /* White color code */
+}
+
+
+
+
+/* cover pic  */
+
+.text-right
+{
+   padding-left: 10em;
+   word-wrap: normal;
+}
+
+#menu
+{
+    background-color:#230336;
+    text-align: center;
+   
+}
+
+#order-now
+{
+    background-color: rgb(255, 179, 80);
+    text-align: center;
+}
+
+#card,#email
+{
+    background-color:rgba(255, 179, 80);
+    border-color: aliceblue;
+    
+    
+}
+
+#statistics
+{
+    background-color: #230336;
+}
+
+#footer
+{
+    background-color: rgb(34, 34, 34);
+}
