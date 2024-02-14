@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-primary: #1f3248;
+  --color-secondary: #f99509;
+  --color-light: #fff;
+  --color-body: #606060;
+}
+
+body {
+  background-color: var(--color-light);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Work Sans";
+  font-optical-sizing: auto;
+}
+header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-radius: 25px;
+  margin-left: 100px;
+}
+
+header h1 {
+  padding: 320px 40px;
+}
+
+main {
+  align-self: center;
+  margin-right: 40px;
+  color: var(--color-primary);
+}
+main .container,
+main .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  align-items: center;
+  padding: 20px 60px 0;
+}
+
+main .container .border {
+  display: flex;
+  align-items: center;
+  color: var(--color-body);
+}
+
+main .container .border .line {
+  border-top: 1px solid var(--color-body);
+  padding: 0 40px;
+}
+
+.container {
+  padding: 10px 10px;
+}
+
+main .container form input {
+  border-radius: 18px;
+  border-style: none;
+  border: 1px solid var(--color-primary);
+  padding: 12px;
+  width: 100%;
+}
+
+main .container form h3 {
+  font-size: 15px;
+  align-self: flex-end;
+  transform: translate(0, -100%);
+  cursor: pointer;
+}
+
+/* Forgot password page */
+
+main.f-p {
+  margin-top: 20%;
+  align-self: start;
+}
+
+/* Verify mail */
+
+main .container .btn-gray {
+  border: none;
+  background-color: #e9ebed;
+  width: 80%;
+}
+
+main .container .btn-short-v {
+  width: 80%;
+}
+/* Utility classes */
+
+.btn {
+  background-color: transparent;
+  padding: 14px 180px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-short {
+  padding: 14px 225px;
+}
+
+.btn-dark {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.btn-light {
+  border: 2px solid var(--color-primary);
+}
+
+.text-light {
+  color: var(--color-body);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
