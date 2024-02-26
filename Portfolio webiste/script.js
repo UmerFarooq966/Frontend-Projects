@@ -1,8 +1,11 @@
 let typewriter = document.getElementById("typewriter");
 let paragraph = document.getElementById("paragraph");
 let detail = document.getElementById("detail");
+let hCur = document.getElementById("h-cur");
+let pCur = document.getElementById("p-cur");
 
-var data = "Hello I'm Umer";
+var data = "Hello I'm Umer 👋";
+var data2 = "I build digital products.";
 
 const sleep = (time) => {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -11,16 +14,17 @@ const sleep = (time) => {
 const doSomething = async () => {
   await sleep(1200);
   for (let i = 0; i < data.length; i++) {
-    var rand = Math.floor(Math.random() * 500) + 200;
+    var rand = Math.floor(Math.random() * 400) + 50;
     await sleep(rand);
     typewriter.innerHTML += data[i];
   }
-  await sleep(500);
-  paragraph.innerHTML = "Software ";
-  await sleep(500);
-  paragraph.innerHTML += " Engineer";
-  await sleep(500);
-  paragraph.className += " underline";
+  hCur.className = "hidden";
+  for (let i = 0; i < data2.length; i++) {
+    var rand = Math.floor(Math.random() * 300) + 100;
+    await sleep(rand);
+    paragraph.innerHTML += data2[i];
+  }
+  pCur.className = "hidden";
 
   await sleep(1000);
   detail.innerHTML =

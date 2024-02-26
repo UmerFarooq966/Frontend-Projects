@@ -37,14 +37,15 @@
             <!-- text -->
             <div class="flex justify-center pt-16">
                 <h1 id="typewriter" class="font-bold text-6xl pl-6  "></h1>
-                <span class="border-l-emerald-50 border-l-4 pl-1 "></span>
+                <span id="h-cur" class="border-l-emerald-50 border-l-4 pl-1 "></span>
             </div>
-            <div class="flex justify-center pt-8">
-                <h2 id="paragraph" class="font-bold text-5xl pt-12 "></h2>
+            <div class="flex justify-center mt-8">
+                <h2 id="paragraph" class="font-bold text-5xl mt-12 "></h2>
+                <span id="p-cur" class="border-l-emerald-50 border-l-4 pl-1 "></span>
 
             </div>
             <div class="flex justify-center pt-8 text-center">
-                <p id="detail" class="font-semibold text-2xl pt-12 "></p>
+                <p id="detail" class="font-semibold text-xl pt-12 "></p>
 
             </div>
 
@@ -79,10 +80,16 @@
 
     <section id="technologies" class="mt-56">
         <div class="container py-6 px-20">
-            <h2 class="font-normal text-5xl pt-12">
+            <h2 class="font-normal text-5xl pt-12 relative">
                 I build websites, ecommerce stores, and web apps.
-
             </h2>
+            <h2 class="font-normal text-xl pt-12 relative">
+                I'm providing full-featured web services including web design, development and search engine
+                optimization. I also like to use Laravel, NextJS, React, Tailwindcss. </h2>
+            <div class="flex flex-col md:flex-row absolute pl-[20%] mt-[-200px] blur-3xl opacity-15">
+                <i class=" fa-solid fa-circle text-[350px] pt-14  duration-200  text-rose-500 blur-3xl"></i>
+                <i class=" fa-solid fa-circle text-[350px] pt-14  duration-200  text-purple-500 blur-3xl"></i>
+            </div>
         </div>
 
     </section>
