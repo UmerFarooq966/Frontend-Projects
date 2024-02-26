@@ -648,6 +648,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .max-w-96 {
   max-width: 24rem;
 }
@@ -802,6 +806,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-5xl {
@@ -1045,5 +1053,29 @@ video {
 
   .hover\:motion-safe\:animate-ping-slow:hover {
     animation: ping 1.3s ease-in-out infinite;
+  }
+}
+
+@media (min-width: 480px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1440px) {
+  .xl\:visible {
+    visibility: visible;
   }
 }

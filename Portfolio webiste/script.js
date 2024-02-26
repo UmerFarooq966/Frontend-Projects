@@ -20,7 +20,7 @@ const doSomething = async () => {
   await sleep(500);
   paragraph.innerHTML += " Engineer";
   await sleep(500);
-  paragraph.className += "underline";
+  paragraph.className += " underline";
 
   await sleep(1000);
   detail.innerHTML =
